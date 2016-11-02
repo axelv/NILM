@@ -15,7 +15,7 @@ def find_notebook(fullname, path=None):
         path = ['']
     for d in path:
         nb_path = os.path.join(d, name + ".ipynb")
-        print(nb_path)
+        #print(nb_path)
         if os.path.isfile(nb_path):
             return nb_path
         # let import Notebook_Name find "Notebook Name.ipynb"
